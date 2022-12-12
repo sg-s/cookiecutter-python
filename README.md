@@ -2,6 +2,16 @@
 
 A simple cookiecutter for my projects.
 
+## What?
+
+This solves the problem of you having to start work on new 
+python projects, and having to manually copy over a lot of 
+boilerplate code and architecture.
+
+## How?
+
+Using [cookiecutter](https://github.com/cookiecutter/cookiecutter) and [cruft](https://github.com/cruft/cruft)
+
 ## Installation 
 
 Don't (unless you want to build off this). Use it directly. 
@@ -27,6 +37,17 @@ with a bunch of useful things pre-set-up.
 
 ### Pre-configured with testing infrastructure 
 
+The following things are set up:
+
+- tests to make sure you write tests for every function
+- install script that will install with `-e` on a configurable local machine
+- script to test every notebook 
+
 ### Pre-configured with git hooks
 
+- pre-commit hooks to make sure you write docstrings for your functions
+- pre-commit hooks to automatically update version number using [calver](https://calver.org/)
+
 ### Ready to build docs
+
+- mkdocs templates to get you started on your own nice documentation
