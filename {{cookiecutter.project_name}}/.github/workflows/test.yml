@@ -1,0 +1,34 @@
+name: pre-merge-checks
+
+on:
+  pull_request:
+    branches: [ main ]
+
+
+
+  run_tests:
+    runs-on: self-hosted
+
+    steps: 
+      - uses: actions/checkout@v3
+
+      - name: run tests
+        run: |
+          chmod +x tests/install.sh
+          ./tests/install.sh
+          pytest -x --durations=0 
+
+
+
+  test_notebooks:
+    runs-on: self-hosted
+
+    steps: 
+      - uses: actions/checkout@v3
+
+      - name: test notebooks
+        run: |
+          chmod +x tests/install.sh
+          ./tests/install.sh
+          chmod +x tests/test_notebooks.sh
+          ./tests/test_notebooks.sh

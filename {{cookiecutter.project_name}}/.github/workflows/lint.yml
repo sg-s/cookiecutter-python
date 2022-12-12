@@ -1,0 +1,20 @@
+name: lint-code
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+
+
+
+jobs:
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: psf/black@stable
+
+
+
+
