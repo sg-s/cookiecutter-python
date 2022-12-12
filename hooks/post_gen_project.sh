@@ -11,4 +11,4 @@ cp assets/pre-commit .git/hooks/
 
 echo "Making a conda env..."
 cp assets/make_conda_env.sh .
-bash ./make_conda_env
+bash ./make_conda_env.sh
