@@ -9,3 +9,6 @@ echo "setting up pre-commit hooks..."
 cp assets/update_version.py .git/hooks/
 cp assets/pre-commit .git/hooks/
 
+echo "Making a conda env..."
+cp assets/make_conda_env.sh .
+bash ./make_conda_env
