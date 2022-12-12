@@ -35,6 +35,12 @@ with a bunch of useful things pre-set-up.
 
 ## Features
 
+### Pre-configured conda environment and Jupyter kernel spec
+
+If you install this, you will get a new conda environment 
+named the same as the repo you are creating, with some 
+utility work to install the kernel so that Jupyter can see it. 
+
 ### Pre-configured with testing infrastructure 
 
 The following things are set up:
