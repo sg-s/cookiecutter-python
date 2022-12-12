@@ -13,8 +13,15 @@ PYVERSION=$(cat setup.py | grep "python_requires"  | tr -dc '0-9.'
 )
 
 echo "Will make environment using this python version:"
-
 echo $PYVERSION
+
+CONDA_ENV_NAME=$(cat setup.py | grep "name=" | cut -d "=" -f 2)
+CONDA_ENV_NAME=${CONDA_ENV_NAME//'"'/}
+CONDA_ENV_NAME=${CONDA_ENV_NAME//','/}
+CONDA_ENV_NAME=${CONDA_ENV_NAME//'-'/_}
+
+echo "Will make environment named:"
+echo $CONDA_ENV_NAME
 
 # # conda, in its infinite wisdom, has decided that it won't
 # # work when called from shell scripts, see:
