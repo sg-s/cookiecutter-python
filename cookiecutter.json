@@ -6,7 +6,7 @@
   "description": "Template for python project",
   "version": "0.0.1",
   "_extensions": ["jinja2_time.TimeExtension"],
-  "repo_name": "{{cookiecutter.toolbox_name.lower().replace(' ', '-')}}",
+  "repo_name": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
   "python_version": ["3.8","3.9","3.11"]
 }
 
