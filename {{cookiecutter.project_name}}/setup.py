@@ -8,9 +8,9 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
     description="{{ cookiecutter.description }}",
     author="{{ cookiecutter.full_name }}",
-    url="https://github.com/sg-s/cookiecutter-python",
+    url="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}",
     author_email="{{ cookiecutter.email }}",
-    python_requires=">=3.9",
+    python_requires="=={{cookiecutter.python_verion}}",
     install_requires=[],
     extras_require={
         "dev": [
