@@ -4,5 +4,12 @@
   "github_username": "sg-s",
   "project_name": "example_project",
   "description": "Template for python project",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "_extensions": ["jinja2_time.TimeExtension"],
+  "repo_name": "{{cookiecutter.toolbox_name.lower().replace(' ', '-')}}",
+  "python_version": ["3.8","3.9","3.11"]
 }
+
+
+
+    

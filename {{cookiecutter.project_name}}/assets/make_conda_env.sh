@@ -38,7 +38,7 @@ eval "$(conda shell.bash hook)"
 conda deactivate 
 
 # first, make a new env without user intervention 
-yes | conda create -n $CONDA_ENV_NAME python=$PYVERSION pip wheel  
+yes | conda create -n $CONDA_ENV_NAME python=$PYVERSION pip wheel -c conda-forge
 
 
 # switch to that
