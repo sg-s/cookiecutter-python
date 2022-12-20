@@ -4,7 +4,7 @@
   "github_username": "sg-s",
   "project_name": "example_project",
   "description": "Template for python project",
-  "version": "{% now 'local', '%Y.%m.%d' %}",
+  "version": "{% now 'local', '%y.%m.%d' %}",
   "_extensions": ["jinja2_time.TimeExtension"],
   "repo_name": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
   "python_version": ["3.8","3.9","3.11"]
