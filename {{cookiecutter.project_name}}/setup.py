@@ -10,7 +10,7 @@ setup(
     author="{{ cookiecutter.full_name }}",
     url="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}",
     author_email="{{ cookiecutter.email }}",
-    python_requires="=={{cookiecutter.python_verion}}",
+    python_requires="=={{cookiecutter.python_version}}",
     install_requires=[],
     extras_require={
         "dev": [
